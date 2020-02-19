@@ -1,0 +1,61 @@
+/****************************** Basic of Cloud : Day 1 ************************************/
+serverless copmputing : ex lambda
+openstack : create your own platefrom /cloud
+
+ad/AD : avalibility network
+
+subnet: partiton in your network.
+
+region : logical boundry where amzaon make service avilable
+evrey region has more than one AD
+
+Private / Public Network 
+
+CIDR Calculator
+
+10.0.0.1/16
+65536 
+
+VPC : For private Network
+
+policy for people to login in aws
+
+IAM : Identity and access managment 
+
+aws sdk
+
+
+/***********/
+
+VPC : create vpc for need or choose default one
+
+create ec2 instance linux m/c
+
+2 types of vms 
+paravirtualize
+virtualize
+
+hard disk = elastic block store
+
+network interface = nic
+
+load balancing : 
+
+ternimate : end the enstance/delete
+
+
+ADD INBOUND ICMP RULE TO IN ORDER TO PING IPv4 Public IP INSTANCE. IN SECURITY GROUPS.
+
+PRIVATE IP IS USED INSIDE THE AWS NETWORK
+PUBLIC IP USED FOR OUTSIDE CONNCTION
+
+
+$ Sudo yum update // yum : yet another update manager
+
+$ sudo install httpd // http installation package
+
+
+
+
+
+
