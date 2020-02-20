@@ -1,0 +1,62 @@
+/********************************** Basic Cloud : Day2 ********************************************************/
+
+Hypervisor [vmm]
+
+vm : booted snapshot
+
+root volume : name has to be xvda for linux system
+
+
+**
+1.replicate existing m/c using snapshot
+2. identify the root device 
+3. click on root device link click on ebsid
+4. rclick on vol and create  snapshot
+5. give tag and backup name .....
+
+** create new linux machine stop it and then goto vol and detach and del exiting for new linux machine
+and then attach the newly backup vol to the instance by using rclick on it as xvda mounting then goto instance 
+and click start the instance you are able to get start httpd service as prevoiuse *** 
+
+xvda for attching bootable vol
+
+sudo chkconfig httpd on  // always start service at sys boot up
+
+
++++++++++++++++++++++++  load balancer++++++++++++++++++++++++++++++++++++++
+
+                            LB
+                            /
+                            /
+                            
+                
+
+sudo service docker start
+
+$ docker ps : for containers
+            -a : shows all contanier runnig and stopped as well
+  docker images : show all ready donwloaded images ( cached )
+  docker serach <search string > : seraches images from docker hub
+  docker rm <container> : remove the container from docker
+  docker rmi <imagename > : remove the image cached from local in docker
+  docker pull <imagename> : pulls the image
+  docker run <options>: runs container
+             --name <containername>
+             -p<hostport>:<conatinerport>
+             -d <daemon>  #run in background
+             
+   if you wish run docker tomcat
+   
+  #
+  docker run --name mytc -p8080:8080 -d tomcat
+  pull the image
+  creates az conatiner
+  start the conatainer
+  bindfs the conatianer to the local port syustem
+  start the application inside the container
+  
+  docker exec -it NAME bash   : to enter the dir
+  
+  
+
+
