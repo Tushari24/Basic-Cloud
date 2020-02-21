@@ -1,0 +1,21 @@
+sudo docker ps -a
+            rm <contanername>
+            
+ /**********create a image your own from esxisting image (image extension)*********/
+ 
+ select the image you wish to extend from
+ a) sudo docker pull nginx
+ 
+ create a tem container
+ b) sudo docker run --name n1_temp -p80:80 -d nginx
+ 
+ c) how do i connect to the conatiner or go inside the container
+ 
+ 
+ 
+ 
+ docker file
+ 
+ //
+ 
+ 
